@@ -3,7 +3,7 @@
     "background": "#222222",
     "defaultColorMaterial": "random1",
     "colladaLoader": "collada2",
-    "fixedFrame": "/iai_kitchen/room_link"
+    "fixedFrame": "/map"
   },
   "viewerOptions": {
     "camera": {
@@ -51,26 +51,17 @@
     },
     {
       "isShown": true,
-      "name": "Kitchen model",
+      "name": "Environment",
       "options": {
-        "param": "kitchen_description",
-        "tfPrefix": "iai_kitchen"
+        "topic": "/environment_marker"
       },
-      "type": "urdf"
+      "type": "markerArray"
     },
     {
       "isShown": true,
-      "name": "Kitchen Objects",
+      "name": "Marker",
       "options": {
         "topic": "/visualization_marker"
-      },
-      "type": "markers"
-    },
-    {
-      "isShown": true,
-      "name": "cram_location_marker",
-      "options": {
-        "topic": "/cram_location_marker"
       },
       "type": "markers"
     },

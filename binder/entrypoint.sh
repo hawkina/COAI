@@ -4,6 +4,8 @@ source ${HOME}/workspace/ros/devel/setup.bash
 
 roscore &
 roslaunch --wait rvizweb rvizweb.launch &
+roslaunch --wait roslaunch cram_projection_demos everything.launch retail:=true donbot:=true upload_robot:=true tf2_buffer:=true &
+
 
 jupyter lab workspaces import ${HOME}/.binder/workspace.json
 

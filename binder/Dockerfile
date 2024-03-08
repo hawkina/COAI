@@ -2,8 +2,8 @@ FROM intel4coro/intel4coro:jupyterhub-ros-base-0.5
 
 # Default ROS workspace
 ENV ROS_WS=${HOME}/workspace/ros
-ENV REPO_DIR=${HOME}/COAI
-ARG CRAM_ROSINSTALL_FILE="https://raw.githubusercontent.com/cram2/cram/devel/cram-20.04-http.rosinstall"
+ENV REPO_DIR=${HOME}/retail
+ARG CRAM_ROSINSTALL_FILE="https://raw.githubusercontent.com/hawkina/cram/retail-demo/cram-20.04.donbot.rosinstall"
 
 # Copy git repository to image
 COPY --chown=${NB_USER}:users . ${REPO_DIR}/
