@@ -1,7 +1,7 @@
 version: '3'
 services:
   cram-binder:
-    image: coai:binderhub
+    image: hawkina:cram
     # build:
     #   context: ../
     #   dockerfile: ./binder/Dockerfile
