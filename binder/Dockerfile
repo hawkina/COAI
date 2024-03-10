@@ -45,9 +45,6 @@ RUN source ${ROS_WS}/devel/setup.bash && \
 RUN source ${ROS_WS}/devel/setup.bash && xvfb-run /usr/bin/sbcl --load ${HOME}/.binder/pre-compile.lisp
 # RUN jupyter lab workspaces import ${HOME}/.binder/workspace.json
 
-# Compress texture files
-RUN /opt/conda/bin/python ${HOME}/.binder/compress_textures.py --img_path=${ROS_WS}/src/iai_maps/iai_apartment/meshes/ --max_size=512
-
 # Copy git repository to image
 COPY --chown=${NB_USER}:users . ${REPO_DIR}/
 WORKDIR ${REPO_DIR}/
