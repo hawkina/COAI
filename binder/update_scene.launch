@@ -1,5 +1,5 @@
 <launch>
-  <arg name="launch_file" />
+  <arg name="launch_file" default="retail_donbot.launch"/>
   <arg name="config_path" />
   
   <!-- Reset tf history -->
