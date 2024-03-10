@@ -1,4 +1,4 @@
-FROM intel4coro/intel4coro:jupyterhub-ros-base-0.5
+FROM intel4coro/base-notebook:20.04-noetic
 
 # Default ROS workspace
 ENV ROS_WS=${HOME}/workspace/ros
