@@ -1,7 +1,7 @@
 version: '3'
 services:
   cram-binder:
-    image: hawkina:cram
+    image: hawkina:retail_donbot
     # build:
     #   context: ../
     #   dockerfile: ./binder/Dockerfile
