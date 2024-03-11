@@ -2,8 +2,8 @@
 
 source ${HOME}/workspace/ros/devel/setup.bash
 
-#roscore &
-#roslaunch --wait rvizweb rvizweb.launch &
+roscore &
+roslaunch --wait rvizweb rvizweb.launch
 #roslaunch --wait cram_projection_demos retail_donbot.launch &
 
 
