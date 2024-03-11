@@ -4,7 +4,7 @@ FROM intel4coro/base-notebook:20.04-noetic
 # Default ROS workspace
 ENV ROS_WS=${HOME}/workspace/ros
 ENV REPO_DIR=${HOME}/COAI
-ARG CRAM_ROSINSTALL_FILE="https://raw.githubusercontent.com/cram2/cram/devel/cram-20.04-http.rosinstall"
+ARG CRAM_ROSINSTALL_FILE="https://raw.githubusercontent.com/hawkina/cram/new-devel/cram-20.04-http.rosinstall"
 
 RUN mkdir ${HOME}/.binder
 COPY --chown=${NB_USER}:users ./binder/*.rosinstall ${HOME}/.binder/
