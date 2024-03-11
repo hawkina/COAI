@@ -53,7 +53,7 @@
       "isShown": true,
       "name": "Environment",
       "options": {
-        "topic": "/cram_environment_visualization"
+        "topic": "/environment_markers"
       },
       "type": "markerArray"
     },
