@@ -8,15 +8,15 @@
   "viewerOptions": {
     "camera": {
       "position": {
-        "x": 2.5,
-        "y": 2.5,
+        "x": -2.5,
+        "y": -2.5,
         "z": 7
       }
     },
     "cameraControls": {
       "center": {
         "x": 0,
-        "y": 2,
+        "y": 0,
         "z": 0
       }
     },
